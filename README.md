@@ -18,8 +18,8 @@ La funcionalidad acordada es:
 
 ###Entorno de trabajo
 
-1. Copie los [fuentes base](fuentes.zip) (index.html, model.js, controller.js, styles.css) en la ruta  src/main/resources/static dentro del proyecto.
-2. En esta misma ruta, ejecute un servidor HTTP (esto es sólo para facilitar el desarrollo y depuración:
+1. Copie los [fuentes base](client_source.zip) (index.html, model.js, controller.js, styles.css) en la ruta  src/main/resources/static dentro del proyecto.
+2. En esta misma ruta, ejecute un servidor HTTP (esto es sólo para facilitar el desarrollo y depuración):
 
 	```bash
 	$ python -m SimpleHTTPServer
