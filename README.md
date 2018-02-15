@@ -1,5 +1,5 @@
 #### Escuela Colombiana de Ingeniería
-#### Procesos de desarrollo de software - PDSW
+#### Arquitecturas de Software - ARSW
 #### Laboratorio - Construcción de cliente de API REST con HTML5, CSS3 y JavaScript. + JavaScript Promises.
 
 El siguiente, es el 'mock' de la aplicación que se quiere desarrollar para manejar las órdenes de restaurante, cuyo API fue desarrollado en el ejercicio anterior:
@@ -16,14 +16,14 @@ La funcionalidad acordada es:
 * Una vez se tenga seleccionada una orden, se podrán 'arrastrar' los platos al área central de la pantalla. Cuando esto se haga, se debe modificar la orden actualmente abierta, agregando dicho plato, y recalculando el valor de la cuenta.
 
 
-###Entorno de trabajo
+### Entorno de trabajo
 
 1. Copie los [fuentes base](client_source.zip) (index.html, model.js, controller.js, styles.css) en la ruta  src/main/resources/static dentro del proyecto.
 2. En esta misma ruta, ejecute un servidor HTTP (esto es sólo para facilitar el desarrollo y depuración):
 
 	```bash
 	$ python -m SimpleHTTPServer
-```
+	```
 3. Abra el contenido en la ruta http://localhost:8000 en el navegador Chrome.
 4. Active las herramientas de desarrollo de Chrome:
 
@@ -48,9 +48,9 @@ La funcionalidad acordada es:
 5. Haga que los elementos del listado de platos sean 'draggables', haciendo que, al momento de ser creados, se les dé dicha propiedad:
 
 	```javascript
- $("li").draggable({
-        helper: 'clone'
-    });	
+	 $("li").draggable({
+		helper: 'clone'
+	    });	
 	```
 	
 	Y haciendo que todo el contenido central sea 'droppable', y que cuando éste reciba un elemento 'draggable' (el nombre de un plato), lo agregue a la orden abierta actualmente:
@@ -82,12 +82,12 @@ La funcionalidad acordada es:
 	* Como jQuery no tiene funciones para peticiones PUT o DELETE, es necesario 'configurarlas' manualmente a través de su API para AJAX. Por ejemplo, si se quisiera hacer una petición PUT a un recurso /platos:
 
 		```javascript
-    return $.ajax({
-        url: "/platos",
-        type: 'PUT',
-        data: '{"precio":1000,"nombre":"papas"}',
-        contentType: "application/json"
-    });
+		    return $.ajax({
+			url: "/platos",
+			type: 'PUT',
+			data: '{"precio":1000,"nombre":"papas"}',
+			contentType: "application/json"
+		    });
     
 		```
 
