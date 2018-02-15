@@ -19,11 +19,7 @@ La funcionalidad acordada es:
 ### Entorno de trabajo
 
 1. Copie los [fuentes base](client_source.zip) (index.html, model.js, controller.js, styles.css) en la ruta  src/main/resources/static dentro del proyecto.
-2. En esta misma ruta, ejecute un servidor HTTP (esto es sólo para facilitar el desarrollo y depuración):
-
-	```bash
-	$ python -m SimpleHTTPServer
-	```
+2. Ejecute el proyecto desde NetBeans.
 3. Abra el contenido en la ruta http://localhost:8000 en el navegador Chrome.
 4. Active las herramientas de desarrollo de Chrome:
 
